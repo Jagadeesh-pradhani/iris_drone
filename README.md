@@ -61,6 +61,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **[ArduPilot](https://ardupilot.org/):** For providing a powerful and flexible open-source platform for drone control and simulation.
 - **[Gazebo Simulator](http://gazebosim.org/):** For offering a robust simulation environment that allows for realistic testing of robotic systems.
-- **[ROS2](https://index.ros.org/doc/ros2/):** For enabling seamless integration of robotics software, making complex robot applications more accessible.
-- **[SLAM Community](https://openslam.org/):** For continuous contributions to the development of SLAM algorithms that enhance autonomous navigation capabilities.
+- **[ROS2](https://docs.ros.org/en/humble/index.html):** For enabling seamless integration of robotics software, making complex robot applications more accessible.
+- **[SLAM Community](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping):** For continuous contributions to the development of SLAM algorithms that enhance autonomous navigation capabilities.
 
