@@ -20,9 +20,9 @@ Before running the simulation, ensure you have the following installed:
 
 ## Installation
 
-Make sure you have installed ardupilot_gazebo and ardupilot :
-**[ardupilot_gazebo](https://github.com/khancyr/ardupilot_gazebo)**
-**[ArduPilot](https://github.com/ArduPilot/ardupilot.git)**
+Make sure you have installed ardupilot_gazebo and ardupilot : <br>
+**[ardupilot_gazebo](https://github.com/khancyr/ardupilot_gazebo)** <br>
+**[ArduPilot](https://github.com/ArduPilot/ardupilot.git)** <br>
 
 Clone this repository into your ROS2 workspace:
 
