@@ -32,6 +32,14 @@ git clone https://github.com/your-username/iris_drone.git
 cd ~/ros2_ws
 colcon build
 ```
+Set environment variables:
+```bash
+echo 'source $HOME/ardupilot/Tools/completion/completion.bash' >> ~/.bashrc
+echo 'export PATH=$PATH:$HOME/ardupilot/Tools/autotest' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=~/ros2_ws/src/iris_drone/models' >> ~/.bashrc
+echo 'export GAZEBO_RESOURCE_PATH=~/ros2_ws/src/iris_drone/worlds:${GAZEBO_RESOURCE_PATH}' >> ~/.bashrc
+```
+
 ## Usage
 1. Launch the Simulation:
    Navigate to your workspace and source the setup file:
