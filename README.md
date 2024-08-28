@@ -62,7 +62,7 @@ echo 'export GAZEBO_RESOURCE_PATH=~/ros2_ws/src/iris_drone/worlds:${GAZEBO_RESOU
   3. Adjust the parameters as necessary for optimal performance.
 
 
-## Acknowledgements
+## References
 
 - **[ArduPilot](https://ardupilot.org/):** For providing a powerful and flexible open-source platform for drone control and simulation.
 - **[Gazebo Simulator](http://gazebosim.org/):** For offering a robust simulation environment that allows for realistic testing of robotic systems.
