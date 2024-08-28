@@ -58,7 +58,7 @@ echo 'export GAZEBO_RESOURCE_PATH=~/ros2_ws/src/iris_drone/worlds:${GAZEBO_RESOU
 ## SLAM Integration
    This package is designed to work seamlessly with various SLAM algorithms. To integrate SLAM:
   1. Launch your SLAM node alongside the drone simulation.
-  2. Ensure the SLAM node subscribes to the appropriate topics (e.g., /drone/odom, /drone/scan).
+  2. Ensure the SLAM node subscribes to the appropriate topics (e.g., /odom, /scan).
   3. Adjust the parameters as necessary for optimal performance.
 
 ## Contributing
