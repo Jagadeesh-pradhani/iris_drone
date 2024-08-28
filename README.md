@@ -61,13 +61,6 @@ echo 'export GAZEBO_RESOURCE_PATH=~/ros2_ws/src/iris_drone/worlds:${GAZEBO_RESOU
   2. Ensure the SLAM node subscribes to the appropriate topics (e.g., /odom, /scan).
   3. Adjust the parameters as necessary for optimal performance.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request or open an Issue for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgements
 
