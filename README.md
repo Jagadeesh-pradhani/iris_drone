@@ -49,7 +49,7 @@ echo 'export GAZEBO_RESOURCE_PATH=~/ros2_ws/src/iris_drone/worlds:${GAZEBO_RESOU
    ```
    Then, launch the simulation:
    ```bash
-   ros2 launch iris_drone iris_drone.launch.py
+   ros2 launch iris_drone iris.launch.py
    ```
 
 2. Control the Drone:
