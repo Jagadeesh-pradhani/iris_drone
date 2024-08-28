@@ -1,0 +1,94 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='iris_lidar'>
+  <pose>0 0 0.075077 0 0 0</pose>
+
+  <!-- <link name='base_link' /> -->
+    
+
+    <link name="base_scan">
+      <pose>0 0 0.075077 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.000166667</ixx>
+          <iyy>0.000166667</iyy>
+          <izz>0.000166667</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>
+          </box>
+        </geometry>
+        <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+      </visual>
+
+      <sensor name="hls_lfcd_lds" type="ray">
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>5</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>0.000000</min_angle>
+              <max_angle>6.280000</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.120000</min>
+            <max>3.5</max>
+            <resolution>0.015000</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="iris_laserscan" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <!-- <namespace>/tb3</namespace> -->
+            <remapping>~/out:=scan</remapping>
+          </ros>
+          <output_type>sensor_msgs/LaserScan</output_type>
+          <frame_name>odom</frame_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <!-- <joint name="lidar_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>base_scan</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+        </dynamics>
+      </axis>
+    </joint> -->
+
+  </model>
+</sdf>

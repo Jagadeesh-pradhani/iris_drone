@@ -1,0 +1,16 @@
+model {
+  file: "model.sdf"
+  file_format {
+    version {
+      major: 1
+      minor: 6
+    }
+    name: "sdf"
+  }
+}
+name: "NIOSH Staging Connector Finals"
+description: "Connector tile for the NIOSH world and Finals staging area."
+authors {
+  name: "Cole Biesemeyer"
+  email: "cole@openrobotics.org"
+}

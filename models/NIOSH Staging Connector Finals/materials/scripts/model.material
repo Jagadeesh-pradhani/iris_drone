@@ -1,0 +1,27 @@
+
+material UrbanTile/Concrete01_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Concrete01_Albedo.png
+        }
+      }
+    }
+  }
+material UrbanTile/Concrete02_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Concrete02_Albedo.png
+        }
+      }
+    }
+  }

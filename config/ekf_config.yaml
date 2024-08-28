@@ -1,0 +1,26 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    sensor_timeout: 0.1
+    two_d_mode: false
+
+    # IMU input
+    imu0: imu
+    imu0_config: [false, false, false,
+                  true,  true,  true,
+                  false, false, false,
+                  false, false, true,
+                  true,  true,  true]
+
+    imu0_differential: false
+    imu0_relative: true
+    imu0_queue_size: 10
+    imu0_pose_rejection_threshold: 0.8
+    imu0_twist_rejection_threshold: 0.8
+    imu0_linear_acceleration_rejection_threshold: 0.8
+
+    # Map odometry frame
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom

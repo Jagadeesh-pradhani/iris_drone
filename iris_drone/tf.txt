@@ -1,0 +1,9 @@
+Odom
+  |
+base_link - iris/ground_truth/odometry_sensorgt_link
+          - iris/imu_link
+          - base_scan
+          - rotor_0
+          - rotor_1
+          - rotor_2
+          - rotor_3
