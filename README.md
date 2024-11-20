@@ -28,7 +28,7 @@ Clone this repository into your ROS2 workspace:
 
 ```bash
 cd ~/ros2_ws/src
-https://github.com/Jagadeesh-pradhani/iris_drone.git
+git clone https://github.com/Jagadeesh-pradhani/iris_drone.git
 cd ~/ros2_ws
 colcon build
 ```
